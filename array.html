@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers and Sum</title>
+</head>
+<body>
+
+    <h1>Numbers and Their Sum</h1>
+    <p><strong>Numbers:</strong> <span id="numbers"></span></p>
+    <p><strong>Sum:</strong> <span id="sum"></span></p>
+
+    <script>
+        // Array of numbers
+        const numbers = [10, 20, 30, 40, 50];
+
+        // Function to calculate the sum
+        function calculateSum(arr) {
+            return arr.reduce((total, num) => total + num, 0);
+        }
+
+        // Display numbers and sum
+        document.getElementById('numbers').textContent = numbers.join(', ');
+        document.getElementById('sum').textContent = calculateSum(numbers);
+    </script>
+
+</body>
+</html>
