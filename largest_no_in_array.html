@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest Number</title>
+</head>
+<body>
+
+    <h1>Find Largest Number in an Array</h1>
+    <p><strong>Numbers:</strong> <span id="numbers"></span></p>
+    <p><strong>Largest Number:</strong> <span id="largest"></span></p>
+
+    <script>
+        // Function to find the largest number in an array
+        function findLargestNumber(arr) {
+            return Math.max(...arr);
+        }
+
+        // Example usage
+        const numbers = [10, 20, 30, 40, 50];
+        const largest = findLargestNumber(numbers);
+
+        // Display numbers and largest number
+        document.getElementById('numbers').textContent = numbers.join(', ');
+        document.getElementById('largest').textContent = largest;
+    </script>
+
+</body>
+</html>
